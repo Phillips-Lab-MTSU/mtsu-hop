@@ -151,16 +151,13 @@ network:
 #     asg-jumpbox: asg-jumpbox
 #     asg-ad: asg-ad
 #     asg-ad-client: asg-ad-client
-#     asg-lustre: asg-lustre
 #     asg-lustre-client: asg-lustre-client
-#     asg-pbs: asg-pbs
-#     asg-pbs-client: asg-pbs-client
+#     asg-pbs: asg-sched
 #     asg-cyclecloud: asg-cyclecloud
 #     asg-cyclecloud-client: asg-cyclecloud-client
 #     asg-nfs-client: asg-nfs-client
 #     asg-telegraf: asg-telegraf
 #     asg-grafana: asg-grafana
-#     asg-robinhood: asg-robinhood
 #     asg-ondemand: asg-ondemand
 #     asg-deployer: asg-deployer
 #     asg-mariadb-client: asg-mariadb-client
