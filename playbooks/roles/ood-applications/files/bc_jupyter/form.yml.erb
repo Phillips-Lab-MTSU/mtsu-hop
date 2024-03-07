@@ -7,7 +7,7 @@ form:
   - container_image
   - bc_num_hours
   - slot_type
-  - container_mounts
+  - apptainer_arguments
 attributes:
   bc_num_hours:
     widget: "number_field"
@@ -28,13 +28,13 @@ attributes:
     id: "container_image"
     label: "Container Image"
     widget: "text_field"
-    value: "jupyter/scipy-notebook"
+    value: "/anfhome/clusteradmin/csci-2024-01-09.sif"
     help: |
       This image requires jupyter installed and in the path.
-  container_mounts:
-    id: "container_mounts"
-    label: "Additional Container Mounts"
+  apptainer_arguments:
+    id: "apptainer_arguments"
+    label: "Additional Apptainer Arguments"
     widget: "text_field"
     value: ""
     help: |
-      Comma-separated list of additional mount[s] inside the container. Format: SRC:DST[,SRC:DST...]
+      Additional arguments for apptainer exec.

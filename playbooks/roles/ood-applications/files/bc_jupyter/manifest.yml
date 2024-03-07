@@ -4,7 +4,7 @@ category: Interactive Apps
 subcategory: Servers
 role: batch_connect
 description: |
-  This app will launch a [Jupyter] server on a cluster running [Enroot]
+  This app will launch a [Jupyter] server on a cluster running [Apptainer]
 
   [Jupyter]: https://jupyter.org/
-  [Enroot]: https://github.com/NVIDIA/enroot
+  [Apptainer]: https://apptainer.org/

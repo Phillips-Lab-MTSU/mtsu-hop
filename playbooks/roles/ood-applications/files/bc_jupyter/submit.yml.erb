@@ -8,11 +8,19 @@ script:
     - "<%= slot_type %>"
     - "-N"
     - "1"
+  <%- if slot_type == 'gpu' -%>
+    - "-G"
+    - "1"
+  <%- end -%>
+  <%- if slot_type == 'smallgpu' -%>
+    - "-G"
+    - "1"
+  <%- end -%>
     - "--exclusive"
     - "--container-image=<%= container_image %>"
     - "--export=ALL"
-  <%- if container_mounts != "" -%>
-    - "--container-mounts=<%= container_mounts %>"
+  <%- if apptainer_arguments != "" -%>
+    - "--apptainer-arguments=<%= apptainer_arguments %>"
   <%- end -%>
 <%- else -%>
     - "-l"

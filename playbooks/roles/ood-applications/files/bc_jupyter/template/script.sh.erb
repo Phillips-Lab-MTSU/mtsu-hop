@@ -4,5 +4,5 @@ THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 <%- if OodAppkit.clusters[context.cluster].job_config[:adapter] == 'pbspro' -%>
 $THIS_DIR/start_container.sh $CONTAINER_NAME $THIS_DIR/start_jupyter.sh
 <%- else -%>
-$THIS_DIR/start_jupyter.sh
+apptainer exec --nv <%=context.apptainer_arguments%> <%=context.container_image%> $THIS_DIR/start_jupyter.sh
 <%- end -%>
